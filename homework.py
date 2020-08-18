@@ -19,8 +19,8 @@ VK_ID = os.getenv('VK_ID')
      
 def get_status(user_id):
 
-    params = {'v': version,
-           'access_token': token,
+    params = {'v': VERSION,
+           'access_token': TOKEN,
            'user_ids': user_id,
            'fields': 'online'
     }
