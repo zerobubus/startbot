@@ -50,7 +50,7 @@ def send_message(message):
  
 
 def main(): 
-    current_timestamp = 1597750923  # начальное значение timestamp 
+    current_timestamp = 1597744083  # начальное значение timestamp 
  
     while True: 
         try: 
