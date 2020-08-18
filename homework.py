@@ -32,7 +32,7 @@ def parse_homework_status(homework):
      
 def get_homework_statuses(current_timestamp): 
     if current_timestamp is None: 
-        current_timestamp = 0
+        current_timestamp = int(time.time())
     headers = {'Authorization': f'OAuth {PRACTICUM_TOKEN}'} 
     params ={'from_date': current_timestamp} 
       
@@ -51,7 +51,7 @@ def send_message(message):
   
  
 def main():  
-    current_timestamp = 0  # начальное значение timestamp  
+    current_timestamp = int(time.time())  # начальное значение timestamp  
   
     while True:  
         try:  
